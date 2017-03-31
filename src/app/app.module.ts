@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { TextEditorModule } from '../text-editor/text-editor.module';
+import { MathjaxModule } from '../mathjax/mathjax.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { AboutComponent } from './about.component';
 	imports: [
 		BrowserModule,
 		TextEditorModule,
+		MathjaxModule,
 		AppRoutingModule
 	],
 	exports: [],
