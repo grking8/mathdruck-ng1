@@ -18,7 +18,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mathDruck';
-  blurb = 'Create and share your math.';
   
   symbols = [
 	  '$\\alpha$',
@@ -26,7 +25,7 @@ export class AppComponent {
 	  '$\\mathcal{B}$',
 	  '$\\mathbb{R}$',
 	  '$\\beta$',
-	  '$\\ldots$'
+	  '$\\vdots$'
   ];
 }
 

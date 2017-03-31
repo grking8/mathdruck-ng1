@@ -1,26 +1,38 @@
 li {
-	color: gray;
-	font-size: 5em;
+	color: #66ff33;
+	font-size: 3em;
 	list-style-type: none;
-	padding: 50px;
+	padding: 30px;
 }
 
 .container {
 	display: -webkit-flex;
 	display: flex;
-	height: 100vh;
+	height: 80vh;
+	background-color: #e6e6e6;
 }
 
 .container div {
-	-webkit-flex: 1;
-	flex: 1;
+	-webkit-flex: 2;
+	flex: 2;
 }
 
 .right_side {
-	background-color: black;
+	background-color: white;
 }
 
 .math_symbols {
-	-moz-column-count: 3;
-	column-count: 3;
+	-moz-column-count: 2;
+	column-count: 2;
+}
+
+footer {
+	height: 7.5vh;
+	background-color: white;
+}
+
+header {
+	height: 12.5vh;
+	background-color: black;
+	color: white;
 }
