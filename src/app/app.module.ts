@@ -1,12 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { TextEditorModule } from '../text-editor/text-editor.module';
 
 import { AppComponent } from './app.component';
-import { TextEditorComponent } from './text-editor.component';
 
 @NgModule({
-	declarations: [AppComponent, TextEditorComponent],
-	imports: [BrowserModule],
+	declarations: [AppComponent],
+	imports: [
+		BrowserModule,
+		TextEditorModule
+	],
 	exports: [],
 	providers: [],
 	bootstrap: [AppComponent]
