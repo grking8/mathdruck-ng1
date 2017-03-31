@@ -11,7 +11,7 @@ describe('TextEditorComponent', () => {
     }).compileComponents();
   }));
 
-  it('should create the text editor component', async(() => {
+  it('should create text editor component', async(() => {
     const fixture = TestBed.createComponent(TextEditorComponent);
     const textEditor = fixture.debugElement.componentInstance;
     expect(textEditor).toBeTruthy();
