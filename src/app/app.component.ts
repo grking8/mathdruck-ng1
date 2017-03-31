@@ -7,14 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mathDruck';
-  
-  symbols = [
-	  '$\\alpha$',
-	  '$\\mathbb{N}$',
-	  '$\\mathcal{B}$',
-	  '$\\mathbb{R}$',
-	  '$\\beta$',
-	  '$\\vdots$'
-  ];
 }
 
