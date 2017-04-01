@@ -1,4 +1,5 @@
 import { TestBed, async } from '@angular/core/testing';
+import { FormsModule }   from '@angular/forms';
 
 import { TextEditorComponent } from './text-editor.component';
 
@@ -8,6 +9,7 @@ describe('TextEditorComponent', () => {
       declarations: [
         TextEditorComponent
       ],
+	  imports: [FormsModule]
     }).compileComponents();
   }));
 
