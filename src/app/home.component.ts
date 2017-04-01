@@ -9,9 +9,13 @@ export class HomeComponent {
   symbols = [
 	  '$\\alpha$',
 	  '$\\mathbb{N}$',
-	  '$\\mathcal{B}$',
+	  '$\\mathcal{A}$',
 	  '$\\mathbb{R}$',
-	  '$\\beta$',
+	  '$\\mathcal{P}$',
+	  '$\\mu$',
+	  '$\\mathbb{Z}$',
+	  '$x$',
+	  '$f$',
 	  '$\\vdots$'
   ];
 }
