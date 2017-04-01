@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
 })
 
 export class TextEditorComponent {
-	
+	msg = 'Text editor goes here.';
 }

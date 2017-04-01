@@ -2,6 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
 import { MathjaxDirective } from '../mathjax/mathjax.directive';
+import { TextEditorComponent } from '../text-editor/text-editor.component';
 
 
 describe(
@@ -14,7 +15,8 @@ describe(
 						{
 							declarations: [
 								HomeComponent,
-								MathjaxDirective
+								MathjaxDirective,
+								TextEditorComponent
 							]
 						}
 					).compileComponents();

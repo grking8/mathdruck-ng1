@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home.component';
 import { AboutComponent } from './about.component';
+import { TextEditorComponent } from '../text-editor/text-editor.component';
 
 const routes: Routes = [
 	{
@@ -11,8 +12,12 @@ const routes: Routes = [
 		component: AboutComponent
 	},
 	{
-		path: 'home', // just the name of the url 
+		path: 'home', 
 		component: HomeComponent
+	},
+	{
+		path: 'editor',
+		component: TextEditorComponent
 	},
 	{
 		path: '',
