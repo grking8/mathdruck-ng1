@@ -1,15 +1,29 @@
 <table>
 	<tr>
 		<td>
-			<textarea placeholder='{{placeholder}}'
-			[(ngModel)]='userTex'>
-				
+			<textarea placeholder='{{placeholder}}' [(ngModel)]='userTex'>
 			</textarea>
 		</td>
 		<td>
-			<div class='math_preview'>
-				{{userTex}}
+			
+			<!--render placeholder, no user input-->
+			<div *ngIf='!userTex && userTex?.length !== 0' 
+			class='math_preview' 
+			Mathjax tex={{placeholder}}> 
 			</div>
+			
+			<!--user input entered then deleted, rerender placeholder-->
+			<div *ngIf='userTex?.length === 0'
+			class='math_preview'
+			Mathjax tex={{placeholder}}>
+			</div>
+			
+			<!--render user input-->
+			<div *ngIf='userTex?.length > 0'
+			class='math_preview'
+			Mathjax tex={{userTex}}>
+			</div>
+			
 		</td>
 	</tr>
 </table>

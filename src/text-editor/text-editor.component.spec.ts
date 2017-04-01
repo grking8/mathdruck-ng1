@@ -1,15 +1,17 @@
 import { TestBed, async } from '@angular/core/testing';
 import { FormsModule }   from '@angular/forms';
 
+import { MathjaxModule } from '../mathjax/mathjax.module';
+
 import { TextEditorComponent } from './text-editor.component';
 
 describe('TextEditorComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        TextEditorComponent
+        TextEditorComponent  
       ],
-	  imports: [FormsModule]
+	  imports: [FormsModule, MathjaxModule]
     }).compileComponents();
   }));
 
