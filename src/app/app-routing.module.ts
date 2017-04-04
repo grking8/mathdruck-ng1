@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home.component';
 import { AboutComponent } from './about.component';
-import { TextEditorComponent } from '../text-editor/text-editor.component';
+import { TextEditorComponent } from '../text-editor/components/text-editor.component';
 
 const routes: Routes = [
 	{

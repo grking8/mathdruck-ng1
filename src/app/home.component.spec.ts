@@ -3,7 +3,7 @@ import { FormsModule }   from '@angular/forms';
 
 import { HomeComponent } from './home.component';
 import { MathjaxDirective } from '../mathjax/mathjax.directive';
-import { TextEditorComponent } from '../text-editor/text-editor.component';
+import { TextEditorComponent } from '../text-editor/components/text-editor.component';
 
 
 describe(
