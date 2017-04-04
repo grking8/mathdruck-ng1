@@ -2,8 +2,8 @@ import { TestBed, async } from '@angular/core/testing';
 import { FormsModule }   from '@angular/forms';
 
 import { HomeComponent } from './home.component';
-import { MathjaxDirective } from '../mathjax/directives/mathjax.directive';
-import { TextEditorComponent } from '../text-editor/components/text-editor.component';
+import { MathjaxDirective } from '../../mathjax/directives/mathjax.directive';
+import { TextEditorComponent } from '../../text-editor/components/text-editor.component';
 
 
 describe(
