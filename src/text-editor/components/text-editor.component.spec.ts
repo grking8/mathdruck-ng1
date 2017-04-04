@@ -1,7 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { FormsModule }   from '@angular/forms';
 
-import { MathjaxModule } from '../mathjax/mathjax.module';
+import { MathjaxModule } from '../../mathjax/mathjax.module';
 
 import { TextEditorComponent } from './text-editor.component';
 

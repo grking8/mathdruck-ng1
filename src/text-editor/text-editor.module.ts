@@ -4,7 +4,7 @@ import { FormsModule }   from '@angular/forms';
 
 import { MathjaxModule } from '../mathjax/mathjax.module';
 
-import { TextEditorComponent } from './text-editor.component';
+import { TextEditorComponent } from './components/text-editor.component';
 
 @NgModule({
 	declarations: [TextEditorComponent],
