@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MathjaxDirective } from './mathjax.directive';
+import { MathjaxDirective } from './directives/mathjax.directive';
 
 @NgModule({
 	declarations: [MathjaxDirective],
