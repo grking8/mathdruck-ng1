@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home.component';
 import { AboutComponent } from './components/about.component';
 import { TextEditorComponent } from '../text-editor/components/text-editor.component';
+import { TexBlobComponent } from '../tex-blob/components/tex-blob.component';
 
 const routes: Routes = [
 	{
@@ -18,6 +19,10 @@ const routes: Routes = [
 	{
 		path: 'editor',
 		component: TextEditorComponent
+	},
+	{
+		path: 'shared',
+		component: TexBlobComponent
 	},
 	{
 		path: '',

@@ -1,0 +1,16 @@
+.container {
+	display: -webkit-flex;
+	display: flex;
+	height: 80vh;
+	background-color: #e6e6e6;
+}
+
+.container div {
+	-webkit-flex: 2;
+	flex: 2;
+}
+
+.math_preview {
+	font-size: 1.5em;
+	padding-top: 20px;
+}
