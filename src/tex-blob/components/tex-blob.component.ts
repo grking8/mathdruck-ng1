@@ -17,7 +17,7 @@ export class TexBlobComponent implements OnInit {
 	constructor(private texBlobService: TexBlobService) {} // does nothing except define private property and identify it as a TexBlobService injection site. Thus Angular knows to supply an instance of the TexBlobService when it creates a TexBlobComponent
 	
 	getTexBlob(): void {
-		var promise = this.texBlobService.getTexBlobSlowly(0);
+		var promise = this.texBlobService.getTexBlob(0);
 		promise.then(result => this.texBlob = result);
 		// result is what is returned once the promised is resolved
 	}
