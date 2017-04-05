@@ -5,7 +5,7 @@ import { TEXBLOBS } from '../mock-tex-blobs';
 
 @Injectable()
 export class TexBlobService {
-	getTexBlob(texBlobId: number): TexBlob {
-		return TEXBLOBS[texBlobId];
+	getTexBlob(texBlobId: number): Promise<TexBlob> {
+		return Promise.resolve(TEXBLOBS[texBlobId]);
 	}
 }
