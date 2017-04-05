@@ -21,7 +21,7 @@ const routes: Routes = [
 		component: TextEditorComponent
 	},
 	{
-		path: 'shared',
+		path: 'shared/:id',
 		component: TexBlobComponent
 	},
 	{

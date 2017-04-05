@@ -1,4 +1,5 @@
 import { TestBed, async } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { MathjaxModule } from '../../mathjax/mathjax.module';
 
@@ -10,7 +11,7 @@ describe('TexBlobComponent', () => {
       declarations: [
         TexBlobComponent  
       ],
-	  imports: [MathjaxModule]
+	  imports: [MathjaxModule, RouterTestingModule]
     }).compileComponents();
   }));
 

@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
+import 'rxjs/add/operator/switchMap';
 
 import { TexBlob } from '../tex-blob';
 import { TexBlobService } from '../services/tex-blob.service';
@@ -14,15 +16,17 @@ import { TexBlobService } from '../services/tex-blob.service';
 export class TexBlobComponent implements OnInit {
 	texBlob: TexBlob;
 	
-	constructor(private texBlobService: TexBlobService) {} // does nothing except define private property and identify it as a TexBlobService injection site. Thus Angular knows to supply an instance of the TexBlobService when it creates a TexBlobComponent
-	
-	getTexBlob(): void {
-		var promise = this.texBlobService.getTexBlob(0);
-		promise.then(result => this.texBlob = result);
-		// result is what is returned once the promised is resolved
-	}
+	constructor(
+		private texBlobService: TexBlobService,
+		private route: ActivatedRoute,
+		private location: Location
+	) {} // does nothing except define private property and identify it as a TexBlobService injection site. Thus Angular knows to supply an instance of the TexBlobService when it creates a TexBlobComponent. Ditto for other two properties
 	
 	ngOnInit(): void {
-		this.getTexBlob();
+		this.route.params
+		.switchMap(
+			(params: Params) =>
+			this.texBlobService.getTexBlob(+params['id'])
+		).subscribe(result => this.texBlob = result);
 	}
 }
