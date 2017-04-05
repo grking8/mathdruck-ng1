@@ -1,4 +1,4 @@
-export class Blob {
+export class TexBlob {
 	id: number;
 	tex: string;
 }

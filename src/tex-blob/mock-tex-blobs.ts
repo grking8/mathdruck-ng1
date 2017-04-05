@@ -1,6 +1,6 @@
-import { Blob } from './blob';
+import { TexBlob } from './tex-blob';
 
-export const BLOBS: Blob[] = [
+export const TEXBLOBS: TexBlob[] = [
 	{
 		id: 1,
 		tex: 'Soit $x \\in \\mathbb{R}$'

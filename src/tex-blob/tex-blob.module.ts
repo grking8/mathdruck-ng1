@@ -7,4 +7,4 @@ import { CommonModule } from '@angular/common';
 	exports: [],
 	providers: []
 })
-export class BlobModule {}
+export class TexBlobModule {}

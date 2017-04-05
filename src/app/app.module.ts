@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { TextEditorModule } from '../text-editor/text-editor.module';
 import { MathjaxModule } from '../mathjax/mathjax.module';
-import { BlobModule } from '../blob/blob.module';
+import { TexBlobModule } from '../tex-blob/tex-blob.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './components/app.component';
@@ -20,7 +20,7 @@ import { AboutComponent } from './components/about.component';
 		BrowserModule,
 		TextEditorModule,
 		MathjaxModule,
-		BlobModule,
+		TexBlobModule,
 		AppRoutingModule
 	],
 	exports: [],
