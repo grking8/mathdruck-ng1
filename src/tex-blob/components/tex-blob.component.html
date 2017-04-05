@@ -2,8 +2,7 @@
 	
 	<div></div>
 
-	<div *ngIf='texBlob' class='math_preview'>
-		{{texBlob.tex}}
+	<div *ngIf='texBlob' class='math_preview' Mathjax tex='{{texBlob.tex}}'>
 	</div>
 	
 	<div></div>

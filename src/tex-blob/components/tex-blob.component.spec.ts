@@ -1,5 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 
+import { MathjaxModule } from '../../mathjax/mathjax.module';
+
 import { TexBlobComponent } from './tex-blob.component';
 
 describe('TexBlobComponent', () => {
@@ -8,6 +10,7 @@ describe('TexBlobComponent', () => {
       declarations: [
         TexBlobComponent  
       ],
+	  imports: [MathjaxModule]
     }).compileComponents();
   }));
 
