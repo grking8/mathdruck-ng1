@@ -11,7 +11,7 @@ const textEditorRoutes: Routes = [
 		component: TextEditorHomeComponent,
 	},
 	{
-		path: 'conf',
+		path: 'conf/:id',
 		component: TextEditorConfComponent
 	}
 ];
