@@ -1,14 +1,28 @@
 import { Injectable } from '@angular/core';
+import { Headers, Http } from '@angular/http';
+
+import 'rxjs/add/operator/toPromise';
 
 import { TexBlob } from '../tex-blob';
-import { TEXBLOBS } from '../mock-tex-blobs';
 
 @Injectable()
 export class TexBlobService {
+	
+	private apiUrl = 'api/texBlobs'; // URL to web api
+	constructor(private http: Http) {}
+	
 	getTexBlob(texBlobId: number): Promise<TexBlob> {
-		return Promise.resolve(TEXBLOBS[texBlobId]);
+		const url = `${this.apiUrl}/${texBlobId}`;
+		
+		var promise = this.http.get(url).toPromise();
+		return promise.then(response => response.json().data as TexBlob);
 	}
 	
+	private handleError(error: any): Promise<any> {
+		console.error('An error occurred', error);
+		return Promise.reject(error.message || error);
+	}
+
 	getTexBlobSlowly(texBlobId: number): Promise<TexBlob> {
 		return new Promise(resolve => {
 			setTimeout(() => resolve(this.getTexBlob(texBlobId)), 3000);
