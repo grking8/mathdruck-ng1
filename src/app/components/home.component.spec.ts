@@ -3,8 +3,6 @@ import { FormsModule }   from '@angular/forms';
 
 import { HomeComponent } from './home.component';
 import { MathjaxDirective } from '../../mathjax/directives/mathjax.directive';
-import { TextEditorComponent } from '../../text-editor/components/text-editor.component';
-
 
 describe(
 	'HomeComponent',
@@ -16,8 +14,7 @@ describe(
 						{
 							declarations: [
 								HomeComponent,
-								MathjaxDirective,
-								TextEditorComponent
+								MathjaxDirective
 							],
 							imports: [FormsModule]
 						}
