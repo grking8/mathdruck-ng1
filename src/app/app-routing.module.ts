@@ -17,10 +17,6 @@ const routes: Routes = [
 		component: HomeComponent
 	},
 	{
-		path: 'editor',
-		component: TextEditorComponent
-	},
-	{
 		path: 'shared/:id',
 		component: TexBlobComponent
 	},
