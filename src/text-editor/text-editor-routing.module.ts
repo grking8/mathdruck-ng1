@@ -3,12 +3,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { TextEditorHomeComponent } from './components/text-editor-home.component';
+import { TextEditorConfComponent } from './components/text-editor-conf.component';
 
 const textEditorRoutes: Routes = [
 	{
 		path: 'editor',
-		component: TextEditorHomeComponent
-		
+		component: TextEditorHomeComponent,
+	},
+	{
+		path: 'conf',
+		component: TextEditorConfComponent
 	}
 ];
 

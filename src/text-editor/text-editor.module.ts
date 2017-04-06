@@ -7,11 +7,13 @@ import { TextEditorRoutingModule } from './text-editor-routing.module';
 
 import { TextEditorComponent } from './components/text-editor.component';
 import { TextEditorHomeComponent } from './components/text-editor-home.component';
+import { TextEditorConfComponent } from './components/text-editor-conf.component';
 
 @NgModule({
 	declarations: [
 		TextEditorComponent, // root component for this module
-		TextEditorHomeComponent
+		TextEditorHomeComponent,
+		TextEditorConfComponent
 	],
 	imports: [
 		CommonModule,
@@ -21,7 +23,8 @@ import { TextEditorHomeComponent } from './components/text-editor-home.component
 	],
 	exports: [
 		TextEditorComponent,
-		TextEditorHomeComponent
+		TextEditorHomeComponent,
+		TextEditorConfComponent
 	],
 	providers: []
 })
