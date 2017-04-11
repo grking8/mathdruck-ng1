@@ -1,6 +1,4 @@
 import { TestBed, async } from '@angular/core/testing';
-import { HttpModule } from '@angular/http';
-import { RouterTestingModule } from '@angular/router/testing';
 
 import { TextEditorConfComponent } from './text-editor-conf.component';
 import { MathjaxDirective } from '../../mathjax/directives/mathjax.directive';
@@ -11,11 +9,7 @@ describe('TextEditorConfComponent', () => {
       declarations: [
         TextEditorConfComponent,
 		MathjaxDirective  
-      ],
-	  imports: [
-	  	RouterTestingModule,
-		HttpModule
-	  ]
+      ]
     }).compileComponents();
   }));
 
