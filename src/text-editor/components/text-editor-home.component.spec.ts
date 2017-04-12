@@ -4,12 +4,14 @@ import { FormsModule }   from '@angular/forms';
 import { MathjaxModule } from '../../mathjax/mathjax.module';
 
 import { TextEditorHomeComponent } from './text-editor-home.component';
+import { TextEditorShareComponent } from './text-editor-share.component';
 
 describe('TextEditorHomeComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        TextEditorHomeComponent  
+        TextEditorHomeComponent,
+		TextEditorShareComponent 
       ],
 	  imports: [FormsModule, MathjaxModule]
     }).compileComponents();

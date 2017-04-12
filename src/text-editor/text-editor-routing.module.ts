@@ -8,7 +8,7 @@ import { TextEditorConfComponent } from './components/text-editor-conf.component
 const textEditorRoutes: Routes = [
 	{
 		path: 'editor',
-		component: TextEditorHomeComponent,
+		component: TextEditorHomeComponent
 	},
 	{
 		path: 'conf',

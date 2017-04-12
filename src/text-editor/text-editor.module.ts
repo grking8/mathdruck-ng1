@@ -9,12 +9,14 @@ import { TexBlobModule } from '../tex-blob/tex-blob.module';
 import { TextEditorComponent } from './components/text-editor.component';
 import { TextEditorHomeComponent } from './components/text-editor-home.component';
 import { TextEditorConfComponent } from './components/text-editor-conf.component';
+import { TextEditorShareComponent } from './components/text-editor-share.component';
 
 @NgModule({
 	declarations: [
 		TextEditorComponent, // root component for this module
 		TextEditorHomeComponent,
-		TextEditorConfComponent
+		TextEditorConfComponent,
+		TextEditorShareComponent
 	],
 	imports: [
 		CommonModule,
@@ -25,7 +27,8 @@ import { TextEditorConfComponent } from './components/text-editor-conf.component
 	exports: [
 		TextEditorComponent,
 		TextEditorHomeComponent,
-		TextEditorConfComponent
+		TextEditorConfComponent,
+		TextEditorShareComponent
 	],
 	providers: []
 })
