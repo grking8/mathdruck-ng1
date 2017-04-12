@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
 	styleUrls: ['./text-editor-share.component.css']
 })
 
-export class TextEditorShareComponent {}
+export class TextEditorShareComponent {
+	testClick() {
+		console.log('hi, you\'ve been clicked.');
+	}
+}
