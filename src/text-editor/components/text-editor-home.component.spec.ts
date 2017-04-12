@@ -1,5 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { FormsModule }   from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { MathjaxModule } from '../../mathjax/mathjax.module';
 
@@ -13,7 +14,11 @@ describe('TextEditorHomeComponent', () => {
         TextEditorHomeComponent,
 		TextEditorShareComponent 
       ],
-	  imports: [FormsModule, MathjaxModule]
+	  imports: [
+	  	FormsModule,
+		HttpModule,
+		MathjaxModule    
+	  ]
     }).compileComponents();
   }));
 

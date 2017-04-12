@@ -1,4 +1,5 @@
 import { TestBed, async } from '@angular/core/testing';
+import { HttpModule } from '@angular/http';
 
 import { TextEditorShareComponent } from './text-editor-share.component';
 
@@ -7,7 +8,8 @@ describe('TextEditorShareComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         TextEditorShareComponent  
-      ]
+      ],
+	  imports: [HttpModule]
     }).compileComponents();
   }));
 
