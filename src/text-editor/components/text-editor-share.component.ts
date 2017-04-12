@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
 	selector: 'text-editor-share',
@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 
 export class TextEditorShareComponent {
-	testClick() {
-		console.log('hi, you\'ve been clicked.');
+	@Input() userTex: string;
+	testClick(str: string) {
+		console.log(str);
 	}
 }
