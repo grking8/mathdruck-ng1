@@ -2,6 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { HttpModule } from '@angular/http';
 
 import { TextEditorShareComponent } from './text-editor-share.component';
+import { TexBlobService } from '../../tex-blob/services/tex-blob.service';
 
 describe('TextEditorShareComponent', () => {
   beforeEach(async(() => {
@@ -9,7 +10,8 @@ describe('TextEditorShareComponent', () => {
       declarations: [
         TextEditorShareComponent  
       ],
-	  imports: [HttpModule]
+	  imports: [HttpModule],
+	  providers: [TexBlobService]
     }).compileComponents();
   }));
 

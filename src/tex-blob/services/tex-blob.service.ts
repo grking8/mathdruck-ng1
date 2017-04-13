@@ -11,6 +11,8 @@ export class TexBlobService {
 	private headers = new Headers({'Content-Type': 'application/json'});
 	private apiUrl = 'api/texBlobs'; // URL to web api
 	
+	userTex: string;
+	
 	constructor(private http: Http) {}
 	
 	getTexBlob(texBlobId: number): Promise<TexBlob> {
@@ -28,6 +30,14 @@ export class TexBlobService {
 		).toPromise();
 		return promise.then(response => response.json().data as TexBlob)
 		.catch(this.handleError);
+	}
+	
+	setUserTex(userTex: string): void {
+		this.userTex = userTex;
+	}
+	
+	getUserTex(): string {
+		return this.userTex;
 	}
 	
 	private handleError(error: any): Promise<any> {

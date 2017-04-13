@@ -6,6 +6,7 @@ import { MathjaxModule } from '../../mathjax/mathjax.module';
 
 import { TextEditorHomeComponent } from './text-editor-home.component';
 import { TextEditorShareComponent } from './text-editor-share.component';
+import { TexBlobService } from '../../tex-blob/services/tex-blob.service';
 
 describe('TextEditorHomeComponent', () => {
   beforeEach(async(() => {
@@ -18,7 +19,8 @@ describe('TextEditorHomeComponent', () => {
 	  	FormsModule,
 		HttpModule,
 		MathjaxModule    
-	  ]
+	  ],
+	  providers: [TexBlobService]
     }).compileComponents();
   }));
 

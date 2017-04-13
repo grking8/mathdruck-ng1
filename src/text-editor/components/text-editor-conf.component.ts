@@ -1,11 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TexBlobService } from '../../tex-blob/services/tex-blob.service';
 
 @Component({
 	selector: 'text-editor-conf',
 	templateUrl: './text-editor-conf.component.html',
 	styleUrls: ['./text-editor-conf.component.css']
 })
-export class TextEditorConfComponent {
+export class TextEditorConfComponent implements OnInit {
+	
+	constructor(private texBlobService: TexBlobService) {}
+	
+	ngOnInit() {
+		console.log(this.texBlobService.getUserTex());
+	}
+	
 	msg = `Thanks for sharing. Your math is available at
 	http://localhost:4200/shared/1`;
 	
