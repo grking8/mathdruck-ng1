@@ -28,5 +28,9 @@
 	</tr>
 </table>
 
-<text-editor-share [userTex]='userTex'></text-editor-share>
+<div class='wrapper'>
+	<button type='button' (click)='setUserTex(userTex)' routerLink='/conf'>
+		Share
+	</button>
+</div>
 

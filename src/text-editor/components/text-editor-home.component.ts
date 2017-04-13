@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TexBlobService } from '../../tex-blob/services/tex-blob.service';
 
 @Component({
 	selector: 'text-editor-home',
@@ -8,6 +9,12 @@ import { Component } from '@angular/core';
 
 export class TextEditorHomeComponent {
 	userTex: string;
+	
+	constructor(private texBlobService: TexBlobService) {}
+	
+	setUserTex(userTex: string): void {		
+		this.texBlobService.setUserTex(userTex);
+	}
 	
 	placeholderTex = `Soient $n$ dans $\\mathbb{N}^*$,
 $a_1,\\ldots,a_n,b_1,\\ldots,b_n$ des réels. Montrer que :

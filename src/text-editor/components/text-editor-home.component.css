@@ -43,6 +43,11 @@ textarea {
 	position: absolute; /* stop resizing */
 }
 
+.wrapper {
+	text-align: center;
+	margin: auto;
+	padding: 3vh;
+}
 
 
 
