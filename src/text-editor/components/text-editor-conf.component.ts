@@ -13,10 +13,7 @@ export class TextEditorConfComponent implements OnInit {
 	
 	texBlob: TexBlob;
 	
-	constructor(
-		private texBlobService: TexBlobService,
-		private route: ActivatedRoute
-	) {}
+	constructor(private route: ActivatedRoute) {}
 	
 	ngOnInit(): void {
 		this.texBlob = this.route.snapshot.data['texBlob'];
