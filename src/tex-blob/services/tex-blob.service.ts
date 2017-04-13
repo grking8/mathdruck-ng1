@@ -8,7 +8,6 @@ import { TexBlob } from '../tex-blob';
 @Injectable()
 export class TexBlobService {
 	
-	private headers = new Headers({'Content-Type': 'application/json'});
 	private apiUrl = 'api/texBlobs'; // URL to web api
 	
 	userTex: string;
@@ -20,16 +19,6 @@ export class TexBlobService {
 		
 		var promise = this.http.get(url).toPromise();
 		return promise.then(response => response.json().data as TexBlob);
-	}
-	
-	writeTexBlob(texBlobTex: string): Promise<TexBlob> {
-		var promise = this.http.post(
-			this.apiUrl,
-			JSON.stringify({tex: texBlobTex}),
-			{headers: this.headers}
-		).toPromise();
-		return promise.then(response => response.json().data as TexBlob)
-		.catch(this.handleError);
 	}
 	
 	setUserTex(userTex: string): void {

@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { TextEditorHomeComponent } from './components/text-editor-home.component';
 import { TextEditorConfComponent } from './components/text-editor-conf.component';
+import { TexBlobResolverService } from '../tex-blob/services/tex-blob-resolver.service';
 
 const textEditorRoutes: Routes = [
 	{
@@ -12,7 +13,10 @@ const textEditorRoutes: Routes = [
 	},
 	{
 		path: 'conf',
-		component: TextEditorConfComponent
+		component: TextEditorConfComponent,
+		resolve: {
+			texBlob: TexBlobResolverService
+		}
 	}
 ];
 

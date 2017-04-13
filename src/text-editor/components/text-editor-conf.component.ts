@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 import { TexBlobService } from '../../tex-blob/services/tex-blob.service';
+import { TexBlob } from '../../tex-blob/tex-blob';
 
 @Component({
 	selector: 'text-editor-conf',
@@ -8,14 +11,18 @@ import { TexBlobService } from '../../tex-blob/services/tex-blob.service';
 })
 export class TextEditorConfComponent implements OnInit {
 	
-	constructor(private texBlobService: TexBlobService) {}
+	texBlob: TexBlob;
 	
-	ngOnInit() {
-		console.log(this.texBlobService.getUserTex());
+	constructor(
+		private texBlobService: TexBlobService,
+		private route: ActivatedRoute
+	) {}
+	
+	ngOnInit(): void {
+		this.texBlob = this.route.snapshot.data['texBlob'];
 	}
 	
-	msg = `Thanks for sharing. Your math is available at
-	http://localhost:4200/shared/1`;
+	msg = 'Thanks for sharing. Your math is available ';
 	
 	tex = `$\\begin{align*}
 	\\left(a_ix+b_i\\right)^2&=

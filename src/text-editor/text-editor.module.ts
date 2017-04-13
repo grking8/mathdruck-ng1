@@ -12,6 +12,7 @@ import { TextEditorConfComponent } from './components/text-editor-conf.component
 import { TextEditorShareComponent } from './components/text-editor-share.component';
 
 import { TexBlobService } from '../tex-blob/services/tex-blob.service';
+import { TexBlobResolverService } from '../tex-blob/services/tex-blob-resolver.service';
 
 @NgModule({
 	declarations: [
@@ -32,6 +33,9 @@ import { TexBlobService } from '../tex-blob/services/tex-blob.service';
 		TextEditorConfComponent,
 		TextEditorShareComponent
 	],
-	providers: [TexBlobService]
+	providers: [
+		TexBlobService,
+		TexBlobResolverService
+	]
 })
 export class TextEditorModule {}
