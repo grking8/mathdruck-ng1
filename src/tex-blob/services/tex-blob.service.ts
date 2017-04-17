@@ -8,7 +8,7 @@ import { TexBlob } from '../tex-blob';
 @Injectable()
 export class TexBlobService {
 	
-	private apiUrl = 'api/texBlobs'; // URL to web api
+	private apiUrl = 'http://mathdruck.api.com/texblobs'; // URL to web api
 	
 	userTex: string;
 	
@@ -18,7 +18,7 @@ export class TexBlobService {
 		const url = `${this.apiUrl}/${texBlobId}`;
 		
 		var promise = this.http.get(url).toPromise();
-		return promise.then(response => response.json().data as TexBlob);
+		return promise.then(response => response.json() as TexBlob);
 	}
 	
 	setUserTex(userTex: string): void {
