@@ -10,7 +10,7 @@ import { TexBlob } from '../tex-blob';
 export class TexBlobResolverService implements Resolve<TexBlob> {
 	
 	private headers = new Headers({'Content-Type': 'application/json'});
-	private apiUrl = 'http://mathdruck.api.com/texblobs'; // URL to web api
+	private apiUrl = 'http://mathdruck-api.babilib.co.uk/texblobs'; // URL to web api
 	
 	constructor(
 		private http: Http,
