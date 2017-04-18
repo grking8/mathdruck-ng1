@@ -3,11 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { TextEditorModule } from '../text-editor/text-editor.module';
 import { MathjaxModule } from '../mathjax/mathjax.module';
+import { TexBlobModule } from '../tex-blob/tex-blob.module';
 import { AppRoutingModule } from './app-routing.module';
 
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home.component';
-import { AboutComponent } from './about.component';
+import { AppComponent } from './components/app.component';
+import { HomeComponent } from './components/home.component';
+import { AboutComponent } from './components/about.component';
 
 @NgModule({
 	declarations: [
@@ -19,6 +20,7 @@ import { AboutComponent } from './about.component';
 		BrowserModule,
 		TextEditorModule,
 		MathjaxModule,
+		TexBlobModule,
 		AppRoutingModule
 	],
 	exports: [],

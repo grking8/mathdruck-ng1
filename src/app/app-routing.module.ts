@@ -2,9 +2,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './home.component';
-import { AboutComponent } from './about.component';
-import { TextEditorComponent } from '../text-editor/text-editor.component';
+import { HomeComponent } from './components/home.component';
+import { AboutComponent } from './components/about.component';
+import { TextEditorComponent } from '../text-editor/components/text-editor.component';
+import { TexBlobComponent } from '../tex-blob/components/tex-blob.component';
 
 const routes: Routes = [
 	{
@@ -16,8 +17,8 @@ const routes: Routes = [
 		component: HomeComponent
 	},
 	{
-		path: 'editor',
-		component: TextEditorComponent
+		path: 'shared/:id',
+		component: TexBlobComponent
 	},
 	{
 		path: '',

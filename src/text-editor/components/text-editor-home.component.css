@@ -2,7 +2,7 @@ table {
     width: 100%;
     padding: 0px;
     margin: 0px;
-    height: 80vh;
+    height: 70vh;
     overflow: hidden;
 	border-spacing: 0px;
 	border-collapse: separate;
@@ -42,6 +42,13 @@ textarea {
 	padding-top: 20px;
 	position: absolute; /* stop resizing */
 }
+
+.wrapper {
+	text-align: center;
+	margin: auto;
+	padding: 3vh;
+}
+
 
 
 

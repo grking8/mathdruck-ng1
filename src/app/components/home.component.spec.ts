@@ -2,9 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { FormsModule }   from '@angular/forms';
 
 import { HomeComponent } from './home.component';
-import { MathjaxDirective } from '../mathjax/mathjax.directive';
-import { TextEditorComponent } from '../text-editor/text-editor.component';
-
+import { MathjaxDirective } from '../../mathjax/directives/mathjax.directive';
 
 describe(
 	'HomeComponent',
@@ -16,8 +14,7 @@ describe(
 						{
 							declarations: [
 								HomeComponent,
-								MathjaxDirective,
-								TextEditorComponent
+								MathjaxDirective
 							],
 							imports: [FormsModule]
 						}
