@@ -10,7 +10,7 @@ import { TexBlob } from '../tex-blob';
 export class TexBlobResolverService implements Resolve<TexBlob> {
 	
 	private headers = new Headers({'Content-Type': 'application/json'});
-	private apiUrl = 'api/texBlobs'; // URL to web api
+	private apiUrl = 'http://mathdruck.api.com/texblobs'; // URL to web api
 	
 	constructor(
 		private http: Http,
@@ -22,7 +22,7 @@ export class TexBlobResolverService implements Resolve<TexBlob> {
 			this.apiUrl,
 			JSON.stringify({tex: this.texBlobService.getUserTex()}),
 			{headers: this.headers}
-		).map(response => response.json().data as TexBlob)
+		).map(response => response.json() as TexBlob)
 		.catch(err => Observable.throw(err.json().error));
 	}
 }
