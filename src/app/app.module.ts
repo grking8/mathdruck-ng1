@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { TextEditorModule } from '../text-editor/text-editor.module';
 import { MathjaxModule } from '../mathjax/mathjax.module';
@@ -18,6 +19,7 @@ import { AboutComponent } from './components/about.component';
 	],
 	imports: [
 		BrowserModule,
+		NgbModule.forRoot(),
 		TextEditorModule,
 		MathjaxModule,
 		TexBlobModule,
