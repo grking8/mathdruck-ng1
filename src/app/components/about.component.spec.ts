@@ -1,7 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { AboutComponent } from './about.component';
-import { FooterComponent } from './footer.component';
+import { FooterComponent } from '../../footer/components/footer.component';
 
 describe('AboutComponent', () => {
   beforeEach(async(() => {
