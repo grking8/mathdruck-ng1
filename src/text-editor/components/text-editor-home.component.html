@@ -5,32 +5,31 @@
 			</textarea>
 		</td>
 		<td>
-			
+		
 			<!-- render placeholder, no user input -->
 			<div *ngIf='!userTex && userTex?.length !== 0' 
 			class='math_preview' 
 			Mathjax tex={{placeholderTex}}> 
 			</div>
-			
+		
 			<!-- user input entered then deleted, rerender placeholder -->
 			<div *ngIf='userTex?.length === 0'
 			class='math_preview'
 			Mathjax tex={{placeholderTex}}>
 			</div>
-			
+		
 			<!-- render user input -->
 			<div *ngIf='userTex?.length > 0'
 			class='math_preview'
 			Mathjax tex={{userTex}}>
 			</div>
-			
+		
 		</td>
 	</tr>
 </table>
 
 <div class='wrapper'>
-	<button type='button' (click)='setUserTex(userTex)' routerLink='/conf'>
+	<button type='button' (click)='setUserTex(userTex)' routerLink='/conf' class="btn btn-success btn-lg btn-huge">
 		Share
 	</button>
 </div>
-
