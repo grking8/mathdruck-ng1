@@ -1,29 +1,6 @@
-li {
-	color: #66ff33;
+.symbol {
 	font-size: 3em;
 	list-style-type: none;
 	padding: 30px;
 }
-
-.container {
-	display: -webkit-flex;
-	display: flex;
-	height: 80vh;
-	background-color: #e6e6e6;
-}
-
-.container div {
-	-webkit-flex: 2;
-	flex: 2;
-}
-
-.right_side {
-	background-color: white;
-}
-
-.math_symbols {
-	-moz-column-count: 2;
-	column-count: 2;
-}
-
 
