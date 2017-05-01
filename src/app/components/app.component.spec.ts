@@ -21,16 +21,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   }));
 
-  it(`should have as title 'mathDruck'`, async(() => {
+  it(`should have as title 'Mathdruck'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('mathDruck');
-  }));
-
-  it('should render title in a header tag', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('header').textContent).toContain('mathDruck');
+    expect(app.title).toEqual('Mathdruck');
   }));
 });

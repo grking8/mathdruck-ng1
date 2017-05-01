@@ -1,11 +1,12 @@
 table {
     width: 100%;
-    padding: 0px;
+    padding-top: 1rem;
     margin: 0px;
     height: 70vh;
     overflow: hidden;
 	border-spacing: 0px;
 	border-collapse: separate;
+	font-family: serif;
 }
 
 td {
@@ -13,7 +14,7 @@ td {
     height: 80vh;
     overflow: auto;
     width: 50%;
-    background-color: #333333;
+    background-color: #292b2c;
     color: #FFF;
     padding: 0px;
     margin: 0px;

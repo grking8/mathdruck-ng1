@@ -1,21 +1,30 @@
-<div class='container'>
-	
-	<div></div>
-
-	<div>
-		<h1>Share</h1>
-		<h1>your</h1>
-		<h1>math</h1>
-		
-		<div>
-			<button type='button' routerLink='/editor'>Start</button>
-		</div>
-		
-	</div>
-	<div class='right_side'>
-		<ul class='math_symbols'>
-			<li *ngFor='let symbol of symbols' Mathjax tex='{{symbol}}'>
-			</li>
-		</ul>
-	</div>
+<div class="jumbotron">
+  <div class="container">
+    <h1 Mathjax tex="{{title}}" class="display-3"></h1>
+    <p>{{mainBlurb}}</p>
+    <p><a class="btn btn-primary btn-lg" routerLink="/editor" role="button">{{mainBtnTxt}} &raquo;</a></p>
+  </div>
 </div>
+
+ <div class="container">
+      <div class="row">
+		  
+		<!-- column one -->
+        <div class="col-md-6">
+          <h2>{{subTitle}}</h2>
+          <p>{{subBlurb}}</p>
+          <p><a class="btn btn-secondary" routerLink="/about" role="button">{{subBtnTxt}} &raquo;</a></p>
+        </div>
+		
+		<!-- column two -->
+		<div class="col-md-6">
+			<div *ngFor="let symbolRow of symbols" class="row">
+				<div *ngFor="let symbol of symbolRow" class="col">
+					<p Mathjax tex="{{symbol.tex}}" class="symbol" [style.color]=symbol.colour></p>
+				</div>
+			</div>
+		</div>
+
+      </div>
+	  <app-footer></app-footer>
+  </div>
