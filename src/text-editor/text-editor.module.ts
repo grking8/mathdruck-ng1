@@ -5,6 +5,7 @@ import { FormsModule }   from '@angular/forms';
 import { MathjaxModule } from '../mathjax/mathjax.module';
 import { TextEditorRoutingModule } from './text-editor-routing.module';
 import { TexBlobModule } from '../tex-blob/tex-blob.module';
+import { FooterModule } from '../footer/footer.module';
 
 import { TextEditorComponent } from './components/text-editor.component';
 import { TextEditorHomeComponent } from './components/text-editor-home.component';
@@ -23,6 +24,7 @@ import { TexBlobResolverService } from '../tex-blob/services/tex-blob-resolver.s
 		CommonModule,
 		FormsModule,
 		MathjaxModule,
+		FooterModule,
 		TextEditorRoutingModule
 	],
 	exports: [

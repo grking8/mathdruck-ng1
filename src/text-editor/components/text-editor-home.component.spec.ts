@@ -3,6 +3,7 @@ import { FormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { MathjaxModule } from '../../mathjax/mathjax.module';
+import { FooterModule } from '../../footer/footer.module';
 
 import { TextEditorHomeComponent } from './text-editor-home.component';
 import { TexBlobService } from '../../tex-blob/services/tex-blob.service';
@@ -16,7 +17,8 @@ describe('TextEditorHomeComponent', () => {
 	  imports: [
 	  	FormsModule,
 		HttpModule,
-		MathjaxModule    
+		MathjaxModule,
+		FooterModule    
 	  ],
 	  providers: [TexBlobService]
     }).compileComponents();
