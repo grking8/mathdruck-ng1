@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 
 import { MathjaxModule } from '../mathjax/mathjax.module';
+import { FooterModule } from '../footer/footer.module';
 
 import { TexBlobComponent } from './components/tex-blob.component';
 
@@ -11,7 +12,8 @@ import { TexBlobComponent } from './components/tex-blob.component';
 	imports: [
 		CommonModule,
 		HttpModule,
-		MathjaxModule
+		MathjaxModule,
+		FooterModule
 	],
 	exports: [TexBlobComponent],
 	providers: []

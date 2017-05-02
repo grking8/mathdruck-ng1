@@ -1,40 +1,17 @@
-table {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    height: 70vh;
-    overflow: hidden;
-	border-spacing: 0px;
-	border-collapse: separate;
-}
-
-td {
-    vertical-align: top;
-    height: 80vh;
-    overflow: auto;
-    width: 50%;
-    background-color: #333333;
-    color: #FFF;
-    padding: 0px;
-    margin: 0px;
-}
-
-.math_preview {
-	font-size: 1.5em;
-    padding-left: 20px;
-	padding-top: 20px;
-	position: absolute; /* stop resizing */
+.wrap {
+	padding-top: 1.38rem;
 }
 
 .message {
-	color: #000000;
-	background-color: #FFF;
-    margin: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-	width: 100%;
-	height: 100%;
 	font-size: 1.5em;
-	box-sizing: border-box;
+}
+
+.preview {
+	font-size: 1em;
+	font-family: serif;
+	background-color: #292b2c;
+	color: #ffffff;
+	height: 80vh;
+	padding: 70px;
+	overflow-y: scroll;
 }

@@ -3,6 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { HttpModule } from '@angular/http';
 
 import { MathjaxModule } from '../../mathjax/mathjax.module';
+import { FooterModule } from '../../footer/footer.module';
 
 import { TexBlobComponent } from './tex-blob.component';
 
@@ -18,6 +19,7 @@ describe(
 						],
 						imports: [
 							MathjaxModule,
+							FooterModule,
 							RouterTestingModule,
 							HttpModule
 						]
