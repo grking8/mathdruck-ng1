@@ -1,39 +1,27 @@
-<div class="container-fluid">
-	<table>
-		<tr>
-			<td>
+<div class="container-fluid wrap">
+	
+		<div class="row">
+			<div class="col-md-6 no-padding">
 				<textarea placeholder='{{placeholderTex}}' [(ngModel)]='userTex'>
 				</textarea>
-			</td>
-			<td>
-		
-				<!-- render placeholder, no user input -->
-				<div *ngIf='!userTex && userTex?.length !== 0' 
-				class='math_preview' 
-				Mathjax tex={{placeholderTex}}> 
-				</div>
-		
-				<!-- user input entered then deleted, rerender placeholder -->
-				<div *ngIf='userTex?.length === 0'
-				class='math_preview'
-				Mathjax tex={{placeholderTex}}>
-				</div>
-		
-				<!-- render user input -->
-				<div *ngIf='userTex?.length > 0'
-				class='math_preview'
-				Mathjax tex={{userTex}}>
-				</div>
-		
-			</td>
-		</tr>
-	</table>
-
-	<div class='wrapper'>
-		<button type='button' (click)='setUserTex(userTex)' routerLink='/conf' class="btn btn-success btn-lg btn-huge">
-			Share
-		</button>
-	</div>
+			</div>
+			
+			<!-- render placeholder, no user input -->
+			<div *ngIf="!userTex && userTex?.length !== 0" class="col-md-6 preview" Mathjax tex={{placeholderTex}}>
+			</div>
+			
+			<!-- user input entered then deleted, rerender placeholder -->
+			<div *ngIf="userTex?.length === 0" class="col-md-6 preview" Mathjax tex={{placeholderTex}}>
+			</div>
+			
+			<!-- render user input -->
+			<div *ngIf="userTex?.length > 0" class="col-md-6 preview" Mathjax tex={{userTex}}>
+			</div>
+		</div>
 	
-	<app-footer></app-footer>
+		<div class="btn-centre">
+			<button type='button' (click)='setUserTex(userTex)' routerLink='/conf' class="btn btn-success btn-lg btn-huge">Share</button>
+		</div>
+		
+		<app-footer></app-footer>
 </div>
