@@ -3,6 +3,8 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { RouterTestingModule } from '@angular/router/testing';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -10,7 +12,8 @@ describe('AppComponent', () => {
         AppComponent
       ],
 	  imports: [
-	  	RouterTestingModule
+	  	RouterTestingModule,
+		NgbModule
 	  ]
     }).compileComponents();
   }));
