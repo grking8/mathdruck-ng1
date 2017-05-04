@@ -12,7 +12,7 @@ export class HomeComponent {
 	mainBtnTxt = 'Start';
 	
 	subTitle = 'No more compiling, rendering, and uploading files.';
-	subBlurb = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt ut labore et dolore magana aliqua. Sed ut perspiciatis unde omnis iste natus error vit voluptatem accusantium doloremque laudantium.';
+	subBlurb = 'Desktop LaTeX editors, e.g. TeXmaker, are ideal for writing scientific papers and publishing. However, when writing smaller texts, users can sometimes find such editors unwieldy. Moreover, sharing PDFs frequently can be time-consuming.';
 	subBtnTxt = 'Learn more';
 	
 	symbols = [
