@@ -8,7 +8,7 @@ import { TexBlob } from '../tex-blob';
 @Injectable()
 export class TexBlobService {
 	
-	private apiUrl = 'http://mathdruck-api.babilib.co.uk/texblobs'; // URL to web api
+	private apiUrl = 'https://mathdruck-api.babilib.co.uk/texblobs'; // URL to web api
 	
 	userTex: string;
 	
